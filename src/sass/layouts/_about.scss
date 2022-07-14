@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
 
-    background-image: url(../images/mobile/advantages/milk_mobile.png);
+    background-image: url(../images/mobile/advantages/image1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,7 +25,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .about__wrapper {
-        background-image: url(../images/mobile/advantages/milk_mobile@2x.png);
+        background-image: url(../images/mobile/advantages/image1@2x.png);
     }
 }
 
@@ -38,7 +38,7 @@
 @media screen and (min-width: 1200px) {
     .about__wrapper {
         width: 100%;        
-        background-image: url(../images/desktop/advantages/milk_desktop.png);
+        background-image: url(../images/desktop/advantages/image1.png);
         
     }
 
@@ -46,7 +46,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .about__wrapper {
-            background-image: url(../images/desktop/advantages/milk_desktop@2x.png);
+            background-image: url(../images/desktop/advantages/image1@2x.png);
         }
     }
 }
