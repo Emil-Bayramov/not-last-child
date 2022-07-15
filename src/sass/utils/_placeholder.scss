@@ -1,0 +1,31 @@
+%align-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  %middle-font {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+  }
+  
+  %auto-margin {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  %basic-padding {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  
+  %reset-style {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+
+
+
