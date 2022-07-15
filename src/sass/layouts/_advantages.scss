@@ -1,8 +1,6 @@
 .advantages {
   width: 100%;
   background-color: #fff5f6;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .advantages__item {
@@ -25,7 +23,7 @@
     height: 50px;
     width: 100%;
     display: block;
-    background-image: url(/src/images/mobile/advantages/image3.png);
+    background-image: url(../images/mobile/advantages/image3.png);
     background-repeat: no-repeat;
     margin-bottom: 16px;
   }
@@ -34,38 +32,37 @@
     (min-resolution: 2dppx) {
     .advantages__content::before {
       content: '';
-      background-image: url(/src/images/mobile/advantages/image3@2x.png);
+      background-image: url(../images/mobile/advantages/image3@2x.png);
       background-size: contain;
     }
   }
   &--icon2::before {
-    background-image: url(/src/images/mobile/advantages/image4.png);
+    background-image: url(../images/mobile/advantages/image4.png);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advantages__content::before {
       content: '';
-      background-image: url(/src/images/mobile/advantages/image4@2x.png);
+      background-image: url(../images/mobile/advantages/image4@2x.png);
       background-size: contain;
     }
   }
   &--icon3::before {
-    background-image: url(/src/images/mobile/advantages/image5.png);
+    background-image: url(../images/mobile/advantages/image5.png);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advantages__content::before {
       content: '';
-      background-image: url(/src/images/mobile/advantages/image5@2x.png);
+      background-image: url(../images/mobile/advantages/image5@2x.png);
       background-size: contain;
     }
   }
 }
 .advantages__text {
   font-family: 'Titan One';
-  font-weight: 400;
   font-size: 36px;
   line-height: 1.13;
   letter-spacing: 0.04em;
