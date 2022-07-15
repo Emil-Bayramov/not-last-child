@@ -3,21 +3,19 @@
 }
 
 .section__suptitle {
-    font-family: 'Titan One';
+    font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-
     text-align: center;
     text-transform: uppercase;
-
     color: #FFA5BA;
     margin-bottom: 15px;
 }
 
 .section__title {
-    font-family: 'Titan One';
+    font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
@@ -25,15 +23,14 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #D41443;
-    margin-bottom: 8px;
+    margin-bottom: 148px;
 }
 
-.products__list {}
-
 .products__item {
-    padding: 60px;
+    border-radius: 24px;
+    margin-top: 140px;
+    padding: 10px;
 }
 
 .products__item--pink {
@@ -48,60 +45,109 @@
     background-color: #C2E297;
 }
 
-
 .products__name {
-    font-family: 'Titan One';
+    font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
 
-.products__name::before {
+.products__item--pink::before {
     content: "";
     display: block;
-    width: 280px;
-    height: 280px;
-    background-image: url(../../images/mobile/products/image1.png.png);
+    width: 260px;
+    height: 260px;
+    background-image: url(./images/phone/image1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    margin-bottom: 20px;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products__item--peach::before {
+    content: "";
+    display: block;
+    width: 260px;
+    height: 260px;
+    background-image: url(./images/phone/image2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products__item--green::before {
+    content: "";
+    display: block;
+    width: 260px;
+    height: 260px;
+    background-image: url(./images/phone/image3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .products__text {
-    font-family: 'DM Sans';
+    width: 200px;
+    font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
-
     text-align: center;
     letter-spacing: 0.04em;
-
     color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
 }
 
-.products__text::before {}
+.products__text::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 6px;
+    background-image: url(./images/sprite.svg#products-separate);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .products__button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #fff;
-    border: none;
+    margin-bottom: 40px;
+    // background-color: #fff;
+    // border: none;
 }
 
-.products__button-icon {}
+.products__button-icon {
+    width: 40px;
+    height: 40px;
+}
 
 @media screen and (min-width: 768px) {
     .products__list {
         display: flex;
+        width: 100%;
     }
 
     .products__item {
@@ -133,5 +179,4 @@
     .products__item:not(:last-child) {
         margin-right: 32px;
     }
-
 }
