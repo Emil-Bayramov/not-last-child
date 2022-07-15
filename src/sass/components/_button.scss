@@ -1,24 +1,24 @@
 .button {
-  height: 44px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  cursor: pointer;
-  border-radius: 22px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    cursor: pointer;
+    border-radius: 22px;
 }
-.button_theme-light {
-  color: #d41443;
-  background-color: #ffffff;
+  .button_theme-light {
+    color: #D41443;
+    background-color: #FFFFFF;
 }
-.button__icon_theme-light {
-  margin-left: 15px;
-  stroke: #d41443;
+  .button__icon_theme-light {
+    margin-left: 15px;
+    stroke: #D41443;
 }
-.button_theme-dark {
-  color: #ffffff;
-  background-color: #d41342;
+  .button_theme-dark {
+    color: #FFFFFF;
+    background-color: #D41342;
 }
-.button__icon_theme-dark {
-  margin-left: 8px;
-  stroke: #ffffff;
+  .button__icon_theme-dark {
+    margin-left: 8px;
+    stroke: #FFFFFF;
 }
