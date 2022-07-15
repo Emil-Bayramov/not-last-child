@@ -5,53 +5,20 @@
     line-height: 1.31;
     cursor: pointer;
     border-radius: 22px;
-  }
+}
   .button_theme-light {
     color: #D41443;
     background-color: #FFFFFF;
-  }
+}
   .button__icon_theme-light {
     margin-left: 15px;
     stroke: #D41443;
-  }
+}
   .button_theme-dark {
     color: #FFFFFF;
     background-color: #D41342;
-  }
+}
   .button__icon_theme-dark {
     margin-left: 8px;
     stroke: #FFFFFF;
-  }
-  .mobile-menu__button {
-    min-width: 186px;
-    padding-left: 48px;
-    padding-right: 48px;
-  }
-  .section-about__button {
-    min-width: 176px;
-    padding-left: 37px;
-    padding-right: 37px;
-    font-size: 14px;
-    line-height: 1.29;
-
-    &:hover,
-    &:focus {
-      background-color: $buttonHoverColor;
-    }
-  }
-  .button-franchise {
-    min-width: 161px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  .button-locations {
-    min-width: 161px;
-    padding-left: 17px;
-    padding-right: 17px;
-  }
-  .hero__button {
-    height: 40px;
-    font-size: 14px;
-    line-height: 1.29;
-  }
-
+}

@@ -181,6 +181,19 @@
 
 }
 
+.section-about__button {
+    min-width: 176px;
+    padding-left: 37px;
+    padding-right: 37px;
+    font-size: 14px;
+    line-height: 1.29;
+
+    &:hover,
+    &:focus {
+        background-color: $buttonHoverColor;
+    }
+}
+
 .about__image {
     margin-right: 32px;
     margin-bottom: 40px;
