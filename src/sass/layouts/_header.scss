@@ -1,3 +1,5 @@
+// 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
 .bg-color {
   background-color: #efa6b7;
 }
@@ -11,17 +13,21 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 8px;
+  padding-bottom: 0;
 }
 .logo__icon {
   fill: $accentColor;
 }
 .mobile-menu__burger-icon {
   stroke: $accentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .mobile-menu__open-btn:hover &,
+  .mobile-menu__open-btn:focus & {
+    stroke: $mainColor;
+  }
 }
-.mobile-menu__open-btn:hover .mobile-menu__burger-icon,
-.mobile-menu__open-btn:focus .mobile-menu__burger-icon {
-  stroke: $mainColor;
-}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -38,14 +44,16 @@
   pointer-events: none;
   /* overflow-y: scroll;
         z-index: 1; */
-}
-.mobile-menu.is-open {
-  transform: translateX(0);
 
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  &.is-open {
+    transform: translateX(0);
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
+
 .mobile-menu__container {
   position: relative;
   width: 100%;
@@ -55,7 +63,7 @@
 .mobile-menu__close-btn {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 32px;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -63,46 +71,56 @@
 }
 .mobile-menu__close-icon {
   stroke: $mainColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .mobile-menu__close-btn:hover &,
+  .mobile-menu__close-btn:focus & {
+    stroke: $accentColor;
+  }
 }
-.mobile-menu__close-btn:hover .mobile-menu__close-icon,
-.mobile-menu__close-btn:focus .mobile-menu__close-icon {
-  stroke: $accentColor;
-}
+
 .mobile-menu__button {
-  margin-bottom: 32px;
+  display: block;
+  margin: 0 auto 32px auto;
   min-width: 186px;
   padding-left: 48px;
   padding-right: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: 'DM Sans';
+
+  &:hover,
+  &:focus {
+    background-color: $buttonHoverColor;
+  }
 }
-.mobile-menu__button:hover,
-.mobile-menu__button:focus {
-  background-color: $buttonHoverColor;
-}
-.mobile-menu__nav-item:not(:last-child) {
-  margin-bottom: 23px;
-}
+
 .mobile-menu__nav-item {
   position: relative;
-}
-.mobile-menu__nav-item::before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: -10px;
-  left: -20px;
-  height: 1px;
-  width: 120%;
-  background-color: #e18298;
-}
-.mobile-menu__nav-item:last-child::after {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 30px;
-  left: -20px;
-  height: 1px;
-  width: 120%;
-  background-color: #e18298;
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -10px;
+    left: -20px;
+    height: 1px;
+    width: 120%;
+    background-color: #e18298;
+  }
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: -20px;
+    height: 1px;
+    width: 120%;
+    background-color: #e18298;
+  }
 }
 
 .mobile-menu__nav-link {
@@ -111,10 +129,14 @@
   line-height: 1.29;
   text-decoration: none;
   color: $mainColor;
-}
-.mobile-menu__nav-link:hover,
-.mobile-menu__nav-link:focus {
-  color: $accentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: 'DM Sans';
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -123,11 +145,16 @@
     min-width: 160px;
     padding-left: 37px;
     padding-right: 37px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-family: 'DM Sans';
+
+    &:hover,
+    &:focus {
+      background-color: $buttonHoverColor;
+    }
   }
-  .header__button:hover,
-  .header__button:focus {
-    background-color: $buttonHoverColor;
-  }
+
   .header__container {
     padding-top: 32px;
   }
@@ -161,9 +188,13 @@
     font-size: 16px;
     line-height: 1.31;
     color: $mainColor;
-  }
-  .nav-list__link:hover,
-  .nav-list__link:focus {
-    color: $accentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-family: 'DM Sans';
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
   }
 }
