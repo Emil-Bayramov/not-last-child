@@ -1,7 +1,7 @@
 <section class="about section">
     <div class="container">
-        <p class="about__label"> tradition and love </p>
-        <h2 id="howitsmade" class="about__title"> how it’s made </h2>
+        <p id="howitsmade" class="about__label"> tradition and love </p>
+        <h2 class="about__title"> how it’s made </h2>
         <div class="about__wrapper">
             <div class="about__image">
                 <picture>
@@ -9,29 +9,23 @@
                             ./images/desktop/advantages/image2.webp 1x,
                             ./images/desktop/advantages/image2@2x.webp 2x" media="(min-width: 1200px)"
                         type="image/webp" />
-
                     <source srcset="
                             ./images/desktop/advantages/image2.png 1x,
                             ./images/desktop/advantages/image2@2x.png 2x" media="(min-width: 1200px)" />
-
                     <source srcset="
                             ./images/tablet/advantages/image2.webp 1x,
                             ./images/tablet/advantages/image2@2x.webp 2x" media="(min-width: 768px)"
                         type="image/webp" />
-
                     <source srcset="
                             ./images/tablet/advantages/image2.png 1x,
                             ./images/tablet/advantages/image2@2x.png 2x" media="(min-width: 768px)" />
-
                     <source srcset="
                             ./images/mobile/advantages/image2.webp 1x,
                             ./images/mobile/advantages/image2@2x.webp 2x" media="(max-width: 767px)"
                         type="image/webp" />
-
                     <source srcset="
                             ./images/mobile/advantages/image2.png 1x,
                             ./images/mobile/advantages/image2@2x.png 2x" media="(max-width: 767px)" />
-
                     <img src="./images/desktop/advantages/image2.png" alt="Корова">
                 </picture>
             </div>
@@ -47,13 +41,12 @@
                 <pre class="about__text">
 Provident excepturi nostrum sit necessitatibus ut?
                 </pre> 
-                <button class="button section-about__button button_theme-light" type="button">Read more
+                <button class="button section-about__button button_theme-light" type="button" data-modal-open>Read more
                     <svg class="button__icon_theme-light" width="5" height="8">
                         <use href="./images/sprite.svg#icon-arrow"></use>
                     </svg>
                 </button>
             </div>
         </div>
-
     </div>
 </section>
