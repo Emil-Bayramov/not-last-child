@@ -1,8 +1,15 @@
 .background {
+  width: 100%;
     background-color: $bg-color-pink;
     @include mq(mobile-only) {
       overflow: hidden;
+      
     }
+
+.container {
+  padding-bottom: 0px;
+}
+
   }
   .hero {
     position: relative;
@@ -286,6 +293,7 @@
       z-index: 1;
       position: absolute;
       bottom: 0;
+
       @include mq(mobile-only) {
         bottom: 0px;
         margin-left: auto;
@@ -302,6 +310,9 @@
     }
     &__img-middle::before {
       position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       z-index: -1;
       border-radius: 50%;
   
@@ -309,20 +320,20 @@
       background-color: #ffa5ba;
   
       @include mq(mobile-only) {
-        top: -14px;
-        left: -100px;
+        // top: -14px;
+        // left: -100px;
         width: 346px;
         height: 344px;
       }
       @include mq(tablet) {
-        top: -55px;
-        left: -93px;
+        // top: -55px;
+        // left: -93px;
         width: 360px;
         height: 360px;
       }
       @include mq(desktop) {
-        top: -51px;
-        left: -118px;
+        // top: -51px;
+        // left: -118px;
         width: 540px;
         height: 540px;
       }

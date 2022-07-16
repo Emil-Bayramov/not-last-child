@@ -1,7 +1,7 @@
 // 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 .bg-color {
-  background-color: #efa6b7;
+  background-color: #FFB8CA;
 }
 
 .nav-list,
@@ -9,6 +9,7 @@
   display: none;
 }
 .header__container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
