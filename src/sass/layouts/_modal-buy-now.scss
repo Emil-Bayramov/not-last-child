@@ -1,12 +1,11 @@
-.modal-contacts-form {
+.modal-form {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.modal-contacts-form-title {
+.modal-form__title {
     margin-bottom: 12px;
-    // font-family: Titan One;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
@@ -15,21 +14,20 @@
     color: $accentColor;
 }
 
-.modal-contacts-form-field {
+.modal-form__field {
     margin-bottom: 10px;
 }
 
-.modal-contacts-form-field-key {
+.modal-form__field_key {
     display: block;
     margin-bottom: 4px;
-    // font-family: ;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: $textSecondaryColor;
 }
 
-.modal-contacts-form-input {
+.modal-form__input {
     width: 100%;
     height: 40px;
     padding-left: 42px;
@@ -59,7 +57,6 @@
     }
 
     &::placeholder {
-        // font-family: var(--primary-font);
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
@@ -67,12 +64,12 @@
     }
 }
 
-.modal-contacts-form-wrapper {
+.modal-form__wrapper {
     position: relative;
     display: block;
 }
 
-.modal-contacts-form-icon {
+.modal-form__icon {
     position: absolute;
     left: 12px;
     top: 50%;
@@ -80,42 +77,97 @@
     stroke: $textSecondaryColor;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .modal-contacts-form-input:focus + & {
+    .modal-form__input:focus + & {
         stroke: $accentColor;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.modal-contacts-form-checkbox-icon {
-    fill: transparent;
-    border: 2px solid #212121;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 7px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-form__money {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
+.modal-form__payment {
+    color: $accentColor;
+    font-size: 20px;
+    line-height: 1.17;
+    font-weight: 700;
+}
 
+.form-caption {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
+.form-group {
+    margin-bottom: 10px;
+}
 
+.modal-form__payment_field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
 
+.modal-form__label {
+    color: $accentColor;
+    font-size: 20px;
+    font-weight: 1.17;
+    margin-left: 4px;
+    cursor: pointer;
+}
 
-.modal-contacts-form-btm {
+.modal-form__checkbox_lable {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    letter-spacing: 0.03em;
+    color: $textSecondaryColor;
+    margin-bottom: 30px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 2px solid $textSecondaryColor;
+        border-radius: 2px;
+        margin-right: 7px;
+        cursor: pointer;
+
+        .modal-form__checkbox:checked+& {
+            background-color: $accentColor;
+            border: none;
+            // background-image: (url(../../images/sprite.svg#icon-close)) ;
+            background-repeat: no-repeat;
+            background-size: auto auto;
+            background-position: 50% 50%;
+        }
+
+        .modal-form__checkbox:focus+& {
+            border-color: $accentColor;
+        }
+    }
+}
+
+.modal-form__link {
+    color: $accentColor;
+}
+
+// .modal-form__checkbox_icon {
+//     fill: transparent;
+//     border: 2px solid #212121;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     margin-right: 7px;
+//     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+.modal-form__btm {
     min-width: 200px;
     align-self: center;
     padding: 10px 56px;
