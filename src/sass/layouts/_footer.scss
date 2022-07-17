@@ -179,22 +179,37 @@ font-style: normal;
 
 
 
-.footer-copyright {
-font-family: 'DM Sans';
+// .footer-copyright {
+// font-family: 'DM Sans';
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 14px;
+//         line-height: 152%;
+//         text-align: center;
+//         color: #907E82;
+//     &::before {
+//                         content: "";
+//                         display: block;
+//                         position: absolute;
+//                         left: 0;
+//                          width: 100%;
+//                         height: 0;
+//                 border: 1px solid #E1E1E1;
+//                 margin-bottom: 16px;    
+// }
+// }
+
+.footer-cr{
+        border-top: 1px solid #e1e1e1;
+    }
+    
+.footer-c{
+        font-family: 'DM Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
-        line-height: 152%;
-        text-align: center;
+        line-height: 186%;
+        letter-spacing: 0.02em;
         color: #907E82;
-    &::before {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                         width: 100%;
-                        height: 0;
-                border: 1px solid #E1E1E1;
-                margin-bottom: 16px;    
-}
+        text-align: center;
 }
