@@ -36,21 +36,25 @@
     <include src="./partials/modal-read-more.html"></include>
 
     <script src="./js/modal-location.js"></script>
+ 
+    <script src="./js/franchise.js"></script>
+
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/link.js"></script>
+    <script src="./js/modal-buy-now.js"></script>
+    
     <div class="swiper mySwiper">
+    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
+        effect: "flip",
+        grabCursor: true,
         pagination: {
           el: ".swiper-pagination",
-          clickable: true,
         },
         navigation: {
           nextEl: ".swiper-button-next",
