@@ -1,5 +1,19 @@
 .products {
-    padding: 60px 0;
+    padding: 60px 16;
+}
+
+@media screen and (max-width:768px){
+    .products {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .products {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
 }
 
 .products__suptitle {
