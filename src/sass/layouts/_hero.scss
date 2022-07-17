@@ -1,31 +1,44 @@
+.hero-container {
+  width: 100%;
+  padding-top: 0;
+}
+
 .background {
+  width: 100%;
     background-color: $bg-color-pink;
-    @include mq(mobile-only) {
+
+    @media screen and (max-width: 767px) {
       overflow: hidden;
     }
-  }
-  .hero {
+}
+
+.hero {       
     position: relative;
     display: flex;
-    @include mq(mobile-only) {
+
+    @media screen and (max-width: 767px) {
       padding-top: 136px;
       padding-bottom: 158px;
     }
-    @include mq(tablet) {
+
+    @media screen and (min-width: 768px) {
       padding-top: 20px;
       padding-bottom: 16px;
     }
   
-    @include mq(desktop) {
+    @media screen and (min-width: 1200px) {
       padding-top: 60px;
       padding-bottom: 60px;
     }
+}
+
+
+.hero__wrapper-left {
+  position: relative;
+      z-index: 999;
+}
   
-    &__wrapper-left {
-      z-index: 4;
-    }
-  
-    &__title {
+.hero__title {
       letter-spacing: 0.04em;
       font-family: 'Titan One';
       font-size: 38px;
@@ -35,62 +48,64 @@
   
       text-transform: uppercase;
       color: $mainColor;
+
+      margin-bottom: 20px;
   
-      @include mq(mobile-only) {
+      @media screen and (max-width: 767px) {
         max-width: 218px;
         font-size: 26px;
         line-height: 1.15;
       }
   
-      @include mq(tablet) {
+      @media screen and (min-width: 768px) {
         max-width: 162px;
         font-size: 22px;
         line-height: 1.13;
+        
       }
-      @include mq(desktop) {
+
+      @media screen and (min-width: 1200px) {
         font-size: 38px;
         line-height: 1.15;
         max-width: 277px;
+        margin-bottom: 24px;
       }
-    }
+}
   
-    &__title--accent {
+.hero__title--accent {
       color: $accentColor;
   
-      @include mq(mobile-only) {
+      @media screen and (max-width: 767px) {
         font-size: 46px;
       }
   
-      @include mq(tablet) {
+      @media screen and (min-width: 768px) {
         font-size: 34px;
+        
       }
-      @include mq(desktop) {
+
+      @media screen and (min-width: 1200px) {
         font-size: 60px;
       }
-    }
+}
   
-    &__list-left {
+.hero__list-left {
       margin-left: auto;
       display: flex;
-      @include mq(notDesktop) {
-        margin-top: 20px;
-      }
-      @include mq(desktop) {
-        margin-top: 24px;
-      }
-    }
-  
-    &__item-left:first-child {
-      @include mq(notDesktop) {
+      
+}
+
+.hero__item-left:first-child {
+      @media screen and (max-width: 1199px) {
         margin-right: 8px;
       }
   
-      @include mq(desktop) {
+      @media screen and (min-width: 1200px) {
         margin-right: 12px;
       }
-    }
+}
   
-    &__btn {
+.hero__btn {
       border-radius: 20px;
       border: transparent;
   
@@ -106,21 +121,22 @@
         background-color:  $buttonHoverColor;
       }
   
-      @include mq(notDesktop) {
-        padding: 8px 12px;
+      @media screen and (max-width: 1199px) {
+        padding: 7px 14px;
   
         font-size: 8px;
         line-height: 1.25;
       }
   
-      @include mq(desktop) {
+      @media screen and (min-width: 1200px) {
         padding: 11px 19px;
   
         font-size: 14px;
         line-height: 1.28;
       }
     }
-    &__btn-accent {
+
+.hero__btn-accent {
       border-radius: 20px;
       border: transparent;
   
@@ -138,84 +154,147 @@
         background-color: $accentColor;
       }
   
-      @include mq(notDesktop) {
+      @media screen and (max-width: 1199px) {
         padding: 7px 14px;
   
         font-size: 8px;
         line-height: 1.25;
       }
   
-      @include mq(desktop) {
+      @media screen and (min-width: 1200px) {
         padding: 11px 24px;
   
         font-size: 14px;
         line-height: 1.28;
       }
     }
+.hero__img-middle {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+
+  @media screen and (max-width: 767px) {
+    bottom: 0px;
+    margin-left: auto;
+    right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // object-position: auto auto;
+    right: 320px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 620px;
+  }
+}
+
+.hero__img-middle::before {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+
+  content: '';
+  background-color: #ffa5ba;
+
+  @media screen and (max-width: 767px) {
+    top: -13px;
+    left: -88px;
+    width: 345px;
+    height: 345px;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: -55px;
+    left: -100px;
+    width: 360px;
+    height: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -15px;
+    left: -118px;
+    width: 540px;
+    height: 540px;
+  }
+}
   
-    &__box {
+.hero__box {
       display: flex;
       margin-top: 20px;
       z-index: 4;
       align-items: center;
+      bottom: 16px;
   
-      @include mq(mobile-only) {
+      @media screen and (max-width: 767px) {
         display: none;
       }
     }
-  
-    &__text-left {
+
+.hero__text-left {
       font-family: $mainColor;
       font-weight: 400;
       color: $mainColor;
   
-      @include mq(tablet) {
+      @media screen and (min-width: 768px) {
         max-width: 114px;
   
         font-size: 8px;
         line-height: 1.5;
       }
   
-      @include mq(desktop) {
+      @media screen and (min-width: 1200px) {
         max-width: 200px;
   
         font-size: 14px;
         line-height: 1.4;
       }
-    }
+}
   
-    &__modal-btn {
+.hero__modal-btn {
       border: transparent;
       background-color: transparent;
       cursor: pointer;
+
+      @media screen and (max-width: 1199px) {
+        width: 18px;
+      }
   
-      @include mq(tablet) {
+      @media screen and (min-width: 768px) {
         margin-top: 7px;
       }
   
-      @include mq(desktop) {
+      @media screen and (min-width: 1200px) {
         margin-top: 20px;
       }
-    }
+}
   
-    &__list-right {
-      margin-left: auto;
+.hero__list-right {
+  position: absolute;
+  top: 16px;
+  right: 40px;
+  margin-left: auto;
   
-      @include mq(mobile-only) {
+      @media screen and (max-width: 767px) {
         display: none;
       }
+
+      @media screen and (min-width: 1200px) {
+        top: 80px;
     }
-    &__item-right {
+}
+
+.hero__item-right {
       display: flex;
       flex-direction: column;
       align-items: end;
     }
   
-    &__item-right:last-child {
+    .hero__item-right:last-child {
       margin-top: 18px;
     }
   
-    &__number {
+.hero__number {
       display: inline-block;
       position: relative;
       z-index: 1;
@@ -224,22 +303,23 @@
       line-height: 1.15;
       font-weight: 400;
       letter-spacing: 0.04em;
-      @include mq(mobile-only) {
+
+      @media screen and (max-width: 767px) {
         display: none;
       }
   
       color: $accentColor;
-      @include mq(tablet) {
+      @media screen and (min-width: 768px) {
         font-size: 28px;
         line-height: 1.14;
       }
-      @include mq(desktop) {
+      @media screen and (min-width: 1200px) {
         font-size: 46px;
         line-height: 1.13;
       }
     }
   
-    &__number::before {
+.hero__number::before {
       position: absolute;
       z-index: -1;
   
@@ -247,13 +327,13 @@
       background-color: $mainColor;
       border-radius: 50%;
   
-      @include mq(tablet) {
+      @media screen and (min-width: 768px) {
         top: -3px;
         right: -7px;
         width: 16px;
         height: 16px;
       }
-      @include mq(desktop) {
+      @media screen and (min-width: 1200px) {
         top: -7px;
         right: -15px;
         width: 30px;
@@ -261,7 +341,7 @@
       }
     }
   
-    &__text-right {
+.hero__text-right {
       display: block;
       margin-top: 2px;
   
@@ -269,74 +349,32 @@
       color: $mainColor;
       font-weight: 400;
   
-      @include mq(tablet) {
+      @media screen and (min-width: 768px) {
         font-size: 8px;
         line-height: 1.25;
       }
   
-      @include mq(desktop) {
+      @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.28;
       }
     }
-  }
-  
-  .hero {
-    &__img-middle {
-      z-index: 1;
-      position: absolute;
-      bottom: 0;
-      @include mq(mobile-only) {
-        bottom: 0px;
-        margin-left: auto;
-        right: 16px;
-      }
-  
-      @include mq(tablet) {
-        left: 320px;
-      }
-  
-      @include mq(desktop) {
-        left: 620px;
-      }
-    }
-    &__img-middle::before {
-      position: absolute;
-      z-index: -1;
-      border-radius: 50%;
-  
-      content: '  ';
-      background-color: #ffa5ba;
-  
-      @include mq(mobile-only) {
-        top: -14px;
-        left: -100px;
-        width: 346px;
-        height: 344px;
-      }
-      @include mq(tablet) {
-        top: -55px;
-        left: -93px;
-        width: 360px;
-        height: 360px;
-      }
-      @include mq(desktop) {
-        top: -51px;
-        left: -118px;
-        width: 540px;
-        height: 540px;
-      }
-    }
-  
-    &__img-right {
+
+
+
+  .hero__img-right {
       position: absolute;
       z-index: 1;
       bottom: 0;
-      right: 0px;
-      @include mq(mobile-only) {
+      right: 32px;
+      @media screen and (max-width: 767px) {
         display: none;
       }
     }
+
+
+  .link {
+    text-decoration: none;
   }
   
   .logo {
