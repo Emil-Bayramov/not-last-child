@@ -1,40 +1,34 @@
-<div class="background container">
-    <section class="hero">
+<section class="hero background">
+  <div class="hero-container container"> 
+  
   <div class="hero__wrapper-left">
     <h1 class="hero__title">
       ice cream made with <span class="hero__title--accent">passion</span>
     </h1>
     <ul class="hero__list-left">
       <li class="hero__item-left">
-        <a href="#products"><button class="hero__btn-accent" type="button">Products</button></a>
+        <a href="#products" class="hero__btn-accent link">Products</a>
       </li>
       <li class="hero__item-left">
-        <a href="#howMade"> <button class="hero__btn" type="button">How it’s made?</button></a>
+        <a href="#howitsmade" class="hero__btn link">How it’s made?</a>
       </li>
     </ul>
     <div class="hero__box">
       <picture class="hero__img-left">
-        <source
-          srcset="./images/tablet/hero/image2.png 1x, ./images/tablet/hero/image2@2x.png 2x"
-          media="(min-width:768px) and (max-width:1279.5px)"
-          type="image/png"
-        />
-        <source
-          srcset="./images/desktop/hero/image2.png 1x, ./images/desktop/hero/image2@2x.png 2x"
-          media="(min-width:1280px)"
-          type="image/png"
-        />
-        <source
-          srcset="./images/tablet/hero/image2.webp 1x, ./images/tablet/hero/image2@2x.webp 2x"
-          media="(min-width:768px) and (max-width:1279.5px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/desktop/hero/image2.webp 1x, ./images/desktop/hero/image2@2x.webp 2x"
-          media="(min-width:1280px)"
-          type="image/webp"
-        />
-        <img src="./images/desktop/hero/image2.png" alt="" />
+
+        <source srcset="./images/desktop/hero/image2.webp 1x,
+        ./images/desktop/hero/image2@2x.webp 2x" media="(min-width:1200px)" type="image/webp" />
+
+        <source srcset="./images/desktop/hero/image2.png 1x, 
+        ./images/desktop/hero/image2@2x.png 2x" media="(min-width:1200px)" />
+
+        <source srcset="./images/tablet/hero/image2.webp 1x, 
+        ./images/tablet/hero/image2@2x.webp 2x" media="(min-width:768px)" type="image/webp" />
+
+        <source srcset="./images/tablet/hero/image2.png 1x, 
+        ./images/tablet/hero/image2@2x.png 2x" media="(min-width:768px)"/>
+
+        <img src="./images/desktop/hero/image2.png" alt="Milk" />
       </picture>
 
       <div class="hero__thumb">
@@ -46,25 +40,23 @@
           <picture>
             <source
               srcset="./images/tablet/hero/arrow-right.png 1x, ./images/tablet/hero/arrow-right@2x.png 2x"
-              media="(min-width:768px) and (max-width:1279.5px)"
-              type="image/png"
+              media="(min-width:768px)"                           
             />
             <source
               srcset="./images/desktop/hero/arrow-right.png 1x, ./images/desktop/hero/arrow-right@2x.png 2x"
-              media="(min-width:1280px)"
-              type="image/png"
+              media="(min-width:1200px)"              
             />
             <source
               srcset="./images/tablet/hero/arrow-right.webp 1x, ./images/tablet/hero/arrow-right@2x.webp 2x"
-              media="(min-width:768px) and (max-width:1279.5px)"
+              media="(min-width:768px)"
               type="image/webp"
             />
             <source
               srcset="./images/desktop/hero/arrow-right.webp 1x, ./images/desktop/hero/arrow-right@2x.webp 2x"
-              media="(min-width:1280px)"
+              media="(min-width:1200px)"
               type="image/webp"
             />
-            <img src="./images/desktop/hero/arrow-right.png" alt="" />
+            <img src="./images/desktop/hero/arrow-right.png" alt="arrow-right" />
           </picture>
         </button>
       </div>
@@ -76,68 +68,52 @@
       <span class="hero__number">16</span>
       <p class="hero__text-right">cafes</p>
     </li>
-    <li class="hero__item-right hero__text-right--place">
+    <li class="hero__item-right">
       <span class="hero__number">23</span>
       <p class="hero__text-right">food trucks</p>
     </li>
   </ul>
   <picture class="hero__img-middle">
+
+    <source srcset="./images/desktop/hero/image1.webp 1x, ./images/desktop/hero/image1@2x.webp 2x"
+      media="(min-width:1200px)" type="image/webp" />
+
+    <source srcset="./images/desktop/hero/image1.png 1x, ./images/desktop/hero/image1@2x.png 2x"
+      media="(min-width:1200px)" />
+
+    <source srcset="./images/tablet/hero/image1.webp 1x, ./images/tablet/hero/image1@2x.webp 2x"
+     media="(min-width:768px)" type="image/webp" />
+
+    <source srcset="./images/tablet/hero/image1.png 1x, ./images/tablet/hero/image1@2x.png 2x"
+     media="(min-width:768px)" />
+
+    <source srcset="./images/mobile/hero/image1.webp 1x, ./images/mobile/hero/image1@2x.webp 2x"
+     media="(max-width:767px)" type="image/webp" />
+
     <source
       srcset="./images/mobile/hero/image1.png 1x, ./images/mobile/hero/image1@2x.png 2x"
-      media="(max-width:767px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/tablet/hero/image1.png 1x, ./images/tablet/hero/image1@2x.png 2x"
-      media="(min-width:768px) and (max-width:1279.5px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/desktop/hero/image1.png 1x, ./images/desktop/hero/image1@2x.png 2x"
-      media="(min-width:1280px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/mobile/hero/image1.webp 1x, ./images/mobile/hero/image1@2x.webp 2x"
-      media="(max-width:767px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/tablet/hero/image1.webp 1x, ./images/tablet/hero/image1@2x.webp 2x"
-      media="(min-width:768px) and (max-width:1279.5px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/desktop/hero/image1.webp 1x, ./images/desktop/hero/image1@2x.webp 2x"
-      media="(min-width:1280px)"
-      type="image/webp"
-    />
+      media="(max-width:767px)" /> 
 
     <img src="./images/desktop/hero/image1.png" alt="Ice Cream" />
   </picture>
+
   <picture class="hero__img-right">
+
+    <source srcset="./images/desktop/hero/image3.webp 1x, ./images/desktop/hero/image3@2x.webp 2x"
+      media="(min-width:1200px)" type="image/webp" />
+
+    <source srcset="./images/desktop/hero/image3.png 1x, ./images/desktop/hero/image3@2x.png 2x"
+      media="(min-width:1200px)" />
+
+    <source srcset="./images/tablet/hero/image3.webp 1x, ./images/tablet/hero/image3@2x.webp 2x"
+     media="(min-width:768px)" type="image/webp" />
+
     <source
       srcset="./images/tablet/hero/image3.png 1x, ./images/tablet/hero/image3@2x.png 2x"
-      media="(min-width:768px) and (max-width:1279.5px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/desktop/hero/image3.png 1x, ./images/desktop/hero/image3@2x.png 2x"
-      media="(min-width:1280px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/tablet/hero/image3.webp 1x, ./images/tablet/hero/image3@2x.webp 2x"
-      media="(min-width:768px) and (max-width:1279.5px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/desktop/hero/image3.webp 1x, ./images/desktop/hero/image3@2x.webp 2x"
-      media="(min-width:1280px)"
-      type="image/webp"
-    />
+      media="(min-width:768px)" />
 
     <img src="./images/desktop/hero/image3.png" alt="Soo Tasty" />
   </picture>
+
+  </div>
 </section>
-</div>
