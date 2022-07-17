@@ -24,7 +24,7 @@
   min-width: 280px;
   z-index: -1;
   @media screen and (min-width: 768px) {
-    padding: 20px 6px 36px;
+    padding: 20px 60px 36px;
   }
   @media screen and (min-width: 1200px) {
     padding: 30px 70px;
@@ -106,6 +106,15 @@
   @media screen and (min-width: 1280px) {
     font-size: 20px;
   }
+}
+.swiper-pagination-bullet .swiper-pagination-bullet-active{
+  display: inline-block;
+  margin: 0 6px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+
 }
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next::after {
   color: #E17992;
