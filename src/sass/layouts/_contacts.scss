@@ -1,5 +1,5 @@
 .contacts {
-  width: 100%;
+  width: 480px;
   // background-color: #fff5f6;
   background-image: linear-gradient(to bottom, $mainColor 24.5%, #fff5f6 0%);
 
@@ -75,26 +75,43 @@
 .contacts__list-top::after {
   display: block;
   width: 100%;
-  margin: 24px 0;
+  margin: 24px 0 0;
   content: '';
   border-bottom: 1px solid $contactsBorderColor;
 
   @media screen and (min-width: 768px) {
-    margin: 32px 0;
+    margin: 32px 0 0;
   }
 }
 
 .contacts__list-middle::after {
   display: block;
   width: 100%;
-  margin: 24px 0;
+  margin: 24px 0 0;
   content: '';
   border-bottom: 1px solid $contactsBorderColor;
 
   @media screen and (min-width: 768px) {
-    margin: 32px 0;
+    margin: 32px;
   }
 }
+
+.contacts__list-top {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__list-middle {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
 .contacts__list-top li:first-child {
   margin-bottom: 8px;
 }
