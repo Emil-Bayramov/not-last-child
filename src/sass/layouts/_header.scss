@@ -17,6 +17,7 @@
   fill: $accentColor;
 }
 .mobile-menu__burger-icon {
+  stroke-width: 3px;
   stroke: $accentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -68,6 +69,7 @@
   line-height: 0;
 }
 .mobile-menu__close-icon {
+  stroke-width: 3px;
   stroke: $mainColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
