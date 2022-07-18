@@ -221,6 +221,7 @@
         }
     
     .products__item {
+        max-width: 368px;
         width: calc((100% - 64px) / 3);
         padding: 165px 60px 60px 60px;
         }
