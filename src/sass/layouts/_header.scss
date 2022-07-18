@@ -199,3 +199,28 @@
     }
   }
 }
+
+
+.home-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+
+  cursor: pointer;
+}
+@media screen and (max-width:768) {
+  .home-button__link{
+    display: none;
+  }
+  
+}
