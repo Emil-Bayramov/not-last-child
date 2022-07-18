@@ -176,6 +176,7 @@
   .header__navigation {
     display: flex;
     align-items: center;
+    z-index: 2;
   }
   .nav-list__item:not(:last-child) {
     margin-right: 35px;
