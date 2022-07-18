@@ -1,3 +1,6 @@
+.customer-reviews{
+  background-color: #fff;
+}
 .customer-reviews__item {
   display: flex;
   flex-direction: column;
@@ -125,6 +128,16 @@
     
   }
 }
+
+.swiper-pagination-bullet{
+  display: inline-block;
+  margin: 0 6px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+}
+
 
 
 
