@@ -1,0 +1,2 @@
+!function(){var o={openModalBtn:document.querySelector("[data-modal-mobile-open-buy-now]"),closeModalBtn:document.querySelector("[data-modal-mobile-close-buy-now]"),modal:document.querySelector("[data-modal-mobile-buy-now]")};function e(){o.modal.classList.toggle("is-hidden")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)}();
+//# sourceMappingURL=index.9701c6a9.js.map
