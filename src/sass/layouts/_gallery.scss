@@ -1,16 +1,26 @@
 .gallery {
-    display: flex;
-    margin: 0 auto;
-    text-align: center;
-    background-image: linear-gradient(
-        #FFF5F6 30%,
-        #ffffff 30%);
+    background-image: linear-gradient(#fff5f6 15%, #ffffff 15%);
+    padding-top: 0;
+
+    @media screen and(min-width:768px) {
+        background-image: linear-gradient(#fff5f6 48%, #ffffff 48%);
+    }
+
+    @media screen and(min-width:1200px) {
+        background-image: linear-gradient(#fff5f6 27%, #ffffff 27%);
+        padding-top: 60px;
+    }
 }
 
-// img {
-//     display: inline-block;
-// }
+.gallery__container {
+    margin: 0 auto;
+    max-width: 480px;
 
-.gallery-image{
-    display: inline-block;
+    @media screen and(min-width:768px) {
+        max-width: 768px;
+    }
+
+    @media screen and(min-width:1200px) {
+        max-width: 1013px;
+    }
 }
