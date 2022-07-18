@@ -24,8 +24,8 @@
     overflow-x: hidden;
 
     @media screen and (max-width: 1199px) {
-        max-width: 450px;
-        height: 609px;
+        min-width: 450px;
+        height: 600px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -46,7 +46,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
-    border: 1px solid transparent;
+
     border-radius: 50%;
     background-color: transparent;
     stroke-width: 3px;
@@ -57,5 +57,8 @@
     &:focus {
     stroke: darkred;
 }
-    
+}
+
+.text__modal {
+    width: 100%;
 }
