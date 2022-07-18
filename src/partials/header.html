@@ -1,5 +1,5 @@
-<header id="home">
-  <div class="header__container container bg-color">
+<header class="header" id="home">
+  <div class="header__container container">
     <nav class="header__navigation">
       <a href="./index.html">
         <svg class="logo__icon" width="199" height="50">
@@ -8,7 +8,7 @@
       </a>
       <ul class="nav-list">
         <li class="nav-list__item">
-          <a class="nav-list__link nav-list__link-current" href="#home">Home</a>
+          <a class="nav-list__link" href="#home">Home</a>
         </li>
         <li class="nav-list__item">
           <a class="nav-list__link" href="#about">About us</a>
@@ -25,7 +25,11 @@
       </ul>
     </nav>
     <div>
-      <button class="button button_theme-light header__button" type="button" data-modal-open-buy-now>
+      <button
+        class="button button_theme-light header__button"
+        type="button"
+        data-modal-open-buy-now
+      >
         Buy now
         <svg class="button__icon_theme-light" width="5" height="8">
           <use href="./images/sprite.svg#icon-arrow"></use>
@@ -48,7 +52,8 @@
 
         <button
           class="button button_theme-light mobile-menu__button"
-          type="button" data-modal-open-buy-now
+          type="button"
+          data-modal-open-buy-now
         >
           Buy now
           <svg class="button__icon_theme-light" width="5" height="8">
