@@ -1,6 +1,6 @@
 .advantages {
   background-color: #fff5f6;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .container {
@@ -77,10 +77,10 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .advantages {
-    padding-top: 60px;
-    padding-bottom: 64px;
-  }
+  // .advantages {
+  //   padding-top: 60px;
+  //   padding-bottom: 64px;
+  // }
   .advantages__list {
     display: flex;
   }
@@ -104,10 +104,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+  // .advantages {
+  //   padding-top: 120px;
+  //   padding-bottom: 120px;
+  // }
   .advantages__content::before {
     margin-bottom: 40px;
   }
