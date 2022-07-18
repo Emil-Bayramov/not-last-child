@@ -1,5 +1,26 @@
+.contacts {
+  width: 480px;
+  // background-color: #fff5f6;
+  background-image: linear-gradient(to bottom, $mainColor 24.5%, #fff5f6 0%);
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, $mainColor 49%, #fff5f6 0%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to bottom, $mainColor 23%, #fff5f6 0%);
+  }
+}
 .contacts__container {
-  background-color: #fff5f6;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .contacts__list {
   display: flex;
@@ -54,26 +75,43 @@
 .contacts__list-top::after {
   display: block;
   width: 100%;
-  margin: 24px 0;
+  margin: 24px 0 0;
   content: '';
   border-bottom: 1px solid $contactsBorderColor;
 
   @media screen and (min-width: 768px) {
-    margin: 32px 0;
+    margin: 32px 0 0;
   }
 }
 
 .contacts__list-middle::after {
   display: block;
   width: 100%;
-  margin: 24px 0;
+  margin: 24px 0 0;
   content: '';
   border-bottom: 1px solid $contactsBorderColor;
 
   @media screen and (min-width: 768px) {
-    margin: 32px 0;
+    margin: 32px;
   }
 }
+
+.contacts__list-top {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__list-middle {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
 .contacts__list-top li:first-child {
   margin-bottom: 8px;
 }

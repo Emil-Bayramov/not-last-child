@@ -1,169 +1,164 @@
-.container {
+/* .container {
     padding-top: 60px;
-    // padding-bottom: 60px;
+    padding-bottom: 60p
 
     @media screen and (max-width: 767px) {
-        // padding-bottom: 40px;
+        padding-bottom: 40p
     }
-}
+} */
 
-.about {  
-    width: 100%;  
-    background-color: #FFF5F6;
-    margin-left: auto;
-    margin-right: auto;
-
+.about {
+  width: 100%;
+  background-color: #fff5f6;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(../images/mobile/advantages/image1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/mobile/advantages/image1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .about__wrapper {
-        background-image: url(../images/mobile/advantages/image1@2x.png);
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about__wrapper {
+    background-image: url(../images/mobile/advantages/image1@2x.png);
+  }
 }
 @media screen and (min-width: 768px) {
-    .about__wrapper {
-        background-image: none;
-    }
+  .about__wrapper {
+    background-image: none;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .about__wrapper {
-        width: 100%;        
-        background-image: url(../images/desktop/advantages/image1.png);
-        
-    }
-    @media (min-device-pixel-ratio: 2),
+  .about__wrapper {
+    width: 100%;
+    background-image: url(../images/desktop/advantages/image1.png);
+  }
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .about__wrapper {
-            background-image: url(../images/desktop/advantages/image1@2x.png);
-        }
+    .about__wrapper {
+      background-image: url(../images/desktop/advantages/image1@2x.png);
     }
+  }
 }
 .about__label {
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    color: $secondaryAccentColor;
-    margin-bottom: 16px;
-    @media screen and (max-width: 767px) {
-        font-size: 18px;
-        line-height: 1.17;
-        margin-bottom: 15px;
-    }
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-        line-height: 1.15;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 30px;
-        line-height: 1.13;
-        letter-spacing: 0.04em;
-    }
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondaryAccentColor;
+  margin-bottom: 16px;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
 }
 .about__title {
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    color: $accentColor;
-    @media screen and (max-width: 767px) {
-        font-size: 34px;
-        line-height: 1.15;
-        letter-spacing: 0.04em;
-        margin-bottom: 32px;
-    }
-    @media screen and (min-width: 768px) {
-        font-size: 48px;
-        line-height: 1.15;
-        margin-bottom: 40px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 58px;
-        line-height: 1.15;
-        letter-spacing: 0.06em;
-        margin-bottom: 60px;
-    }
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: $accentColor;
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    margin-bottom: 60px;
+  }
 }
 .about__lead-text {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    color: $textColor;
-    margin-bottom: 40px;
-    @media screen and (max-width: 767px) {
-        width: 220px;
-        font-size: 12px;
-        line-height: 1.58;
-        
-    }
-    @media screen and (min-width: 768px) {
-        width: 334px;
-        font-size: 14px;
-        line-height: 1.79;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 463px;
-        font-size: 16px;
-        line-height: 1.75;
-        letter-spacing: 0.04em;
-        
-    }
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  color: $textColor;
+  margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    width: 220px;
+    font-size: 12px;
+    line-height: 1.58;
+  }
+  @media screen and (min-width: 768px) {
+    width: 334px;
+    font-size: 14px;
+    line-height: 1.79;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+  }
 }
 .about__text {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    color: $textSecondaryColor;
-    @media screen and (max-width: 767px) {
-        width: 220px;
-        font-size: 12px;
-        line-height: 1.58;
-        margin-bottom: 20px;
-    }
-    @media screen and (min-width: 768px) {
-        width: 334px;
-        font-size: 14px;
-        line-height: 1.79;
-        letter-spacing: 0.04em;
-        margin-bottom: 40px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 463px;
-        font-size: 14px;
-        line-height: 1.93;
-        letter-spacing: 0.04em;
-        margin-bottom: 32px;
-    }
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  color: $textSecondaryColor;
+  @media screen and (max-width: 767px) {
+    width: 220px;
+    font-size: 12px;
+    line-height: 1.58;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 334px;
+    font-size: 14px;
+    line-height: 1.79;
+    letter-spacing: 0.04em;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+    font-size: 14px;
+    line-height: 1.93;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+  }
 }
 .section-about__button {
-    min-width: 176px;
-    padding-left: 37px;
-    padding-right: 37px;
-    font-size: 14px;
-    line-height: 1.29;
-    &:hover,
-    &:focus {
-        background-color: $buttonHoverColor;
-    }
+  min-width: 176px;
+  padding-left: 37px;
+  padding-right: 37px;
+  font-size: 14px;
+  line-height: 1.29;
+  &:hover,
+  &:focus {
+    background-color: $buttonHoverColor;
+  }
 }
 .about__image {
-    margin-right: 32px;
-    margin-bottom: 40px;
+  margin-right: 32px;
+  margin-bottom: 40px;
 }

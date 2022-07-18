@@ -1,10 +1,16 @@
 .modal {
     position: absolute;
-    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
+    background-color: #FFFFFF;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal-bg {
+
     background-color: #FFF5F6;
     background-image: url(../images/mobile/advantages/image1.png);
     background-size: contain;
@@ -15,7 +21,7 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     overflow-y: scroll;
-    
+    overflow-x: hidden;
 
     @media screen and (max-width: 1199px) {
         max-width: 450px;

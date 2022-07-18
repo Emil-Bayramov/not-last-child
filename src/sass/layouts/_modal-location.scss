@@ -1,0 +1,28 @@
+.contacts__modal-location {
+  position: absolute;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  height: 90vh;
+  background: $mainColor;
+  padding: 45px 10px 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 85vw;
+    height: 90vh;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 70vw;
+    height: 80vh;
+  }
+}
+
+.iframe-window {
+  width: 100%;
+  height: 100%;
+}

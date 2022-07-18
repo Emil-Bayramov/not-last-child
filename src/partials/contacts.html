@@ -1,6 +1,6 @@
 <section class="contacts section">
   <div class="contacts__container container">
-    <h1 class="contacts__title visually-hidden">CONTACTS</h1>
+    <h2 class="contacts__title visually-hidden" id="contact">CONTACTS</h2>
     <ul class="contacts__list">
       <li class="contacts__item">
         <p class="contacts__text">cafe</p>
@@ -33,7 +33,7 @@
       <li class="contacts__item">
         <p class="contacts__text">food truck</p>
         <ul class="contacts__list-top">
-          <li class="contacts__item--black">Chicago</li>
+          <li class="contacts__item--black">Los Angeles</li>
           <li class="contacts__item--gray">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </li>
@@ -61,7 +61,7 @@
       <li class="contacts__item">
         <p class="contacts__text">cafe</p>
         <ul class="contacts__list-top">
-          <li class="contacts__item--black">Chicago</li>
+          <li class="contacts__item--black">New York</li>
           <li class="contacts__item--gray">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </li>
@@ -91,7 +91,7 @@
       <li class="contacts__button-item">
         <button
           type="button"
-          class="contacts__button--dark button button_theme-dark"
+          class="contacts__button--dark button button_theme-dark" data-modal-location-open
         >
           Our Locations
           <svg class="contacts__icon--light">
@@ -102,7 +102,12 @@
       <li class="contacts__button-item">
         <button
           type="button"
+
+          
+
           class="contacts__button--light button button_theme-light"
+          data-modal-open-franchise
+
         >
           Franchise
           <svg class="contacts__icon--dark">

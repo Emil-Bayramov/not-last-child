@@ -1,143 +1,212 @@
-<div class="background container">
-    <section class="hero">
-  <div class="hero__wrapper-left">
-    <h1 class="hero__title">
-      ice cream made with <span class="hero__title--accent">passion</span>
-    </h1>
-    <ul class="hero__list-left">
-      <li class="hero__item-left">
-        <a href="#products"><button class="hero__btn-accent" type="button">Products</button></a>
-      </li>
-      <li class="hero__item-left">
-        <a href="#howMade"> <button class="hero__btn" type="button">How it’s made?</button></a>
-      </li>
-    </ul>
-    <div class="hero__box">
-      <picture class="hero__img-left">
-        <source
-          srcset="./images/tablet/hero/image2.png 1x, ./images/tablet/hero/image2@2x.png 2x"
-          media="(min-width:768px) and (max-width:1279.5px)"
-          type="image/png"
-        />
-        <source
-          srcset="./images/desktop/hero/image2.png 1x, ./images/desktop/hero/image2@2x.png 2x"
-          media="(min-width:1280px)"
-          type="image/png"
-        />
-        <source
-          srcset="./images/tablet/hero/image2.webp 1x, ./images/tablet/hero/image2@2x.webp 2x"
-          media="(min-width:768px) and (max-width:1279.5px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/desktop/hero/image2.webp 1x, ./images/desktop/hero/image2@2x.webp 2x"
-          media="(min-width:1280px)"
-          type="image/webp"
-        />
-        <img src="./images/desktop/hero/image2.png" alt="" />
-      </picture>
+<section class="hero">
+  <div class="container hero-container">
+    <div class="hero__wrapper-left">
+      <h1 class="hero__title" id="about">
+        ice cream made with <span class="hero__title_accent">passion</span>
+      </h1>
 
-      <div class="hero__thumb">
-        <p class="hero__text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et
-        </p>
-        <button class="hero__modal-btn" type="button">
-          <picture>
-            <source
-              srcset="./images/tablet/hero/arrow-right.png 1x, ./images/tablet/hero/arrow-right@2x.png 2x"
-              media="(min-width:768px) and (max-width:1279.5px)"
-              type="image/png"
-            />
-            <source
-              srcset="./images/desktop/hero/arrow-right.png 1x, ./images/desktop/hero/arrow-right@2x.png 2x"
-              media="(min-width:1280px)"
-              type="image/png"
-            />
-            <source
-              srcset="./images/tablet/hero/arrow-right.webp 1x, ./images/tablet/hero/arrow-right@2x.webp 2x"
-              media="(min-width:768px) and (max-width:1279.5px)"
-              type="image/webp"
-            />
-            <source
-              srcset="./images/desktop/hero/arrow-right.webp 1x, ./images/desktop/hero/arrow-right@2x.webp 2x"
-              media="(min-width:1280px)"
-              type="image/webp"
-            />
-            <img src="./images/desktop/hero/arrow-right.png" alt="" />
-          </picture>
-        </button>
+      <ul class="hero__btn-list">
+        <li class="hero__btn-list-item">
+          <a href="#products" class="hero__btn hero__btn_accent link"
+            >Products</a
+          >
+        </li>
+        <li class="hero__btn-list-item">
+          <a href="#howitsmade" class="hero__btn link">How it’s made?</a>
+        </li>
+      </ul>
+
+      <div class="hero__info-box">
+        <picture class="hero__img-left">
+          <source
+            srcset="
+              ./images/desktop/hero/image2.webp    1x,
+              ./images/desktop/hero/image2@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./images/desktop/hero/image2.png    1x,
+              ./images/desktop/hero/image2@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+
+          <source
+            srcset="
+              ./images/tablet/hero/image2.webp    1x,
+              ./images/tablet/hero/image2@2x.webp 2x
+            "
+            media="(min-width:768px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./images/tablet/hero/image2.png    1x,
+              ./images/tablet/hero/image2@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+
+          <img src="./images/desktop/hero/image2.png" alt="Milk" />
+        </picture>
+
+        <div class="hero__thumb">
+          <p class="hero__text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+
+          <button class="hero__modal-btn" type="button"></button>
+
+          <!-- <button class="hero__modal-btn" type="button">
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet/hero/arrow-right.png    1x,
+                  ./images/tablet/hero/arrow-right@2x.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./images/desktop/hero/arrow-right.png    1x,
+                  ./images/desktop/hero/arrow-right@2x.png 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/hero/arrow-right.webp    1x,
+                  ./images/tablet/hero/arrow-right@2x.webp 2x
+                "
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/desktop/hero/arrow-right.webp    1x,
+                  ./images/desktop/hero/arrow-right@2x.webp 2x
+                "
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <img
+                src="./images/desktop/hero/arrow-right.png"
+                alt="arrow-right"
+              />
+            </picture>
+          </button> -->
+        </div>
       </div>
     </div>
+
+    <ul class="hero__data-list">
+      <li class="hero__item-right">
+        <span class="hero__number">16</span>
+        <p class="hero__text-right">cafes</p>
+      </li>
+      <li class="hero__item-right">
+        <span class="hero__number">23</span>
+        <p class="hero__text-right">food trucks</p>
+      </li>
+    </ul>
+
+    <picture class="hero__img-middle">
+      <source
+        srcset="
+          ./images/desktop/hero/image1.webp    1x,
+          ./images/desktop/hero/image1@2x.webp 2x
+        "
+        media="(min-width:1200px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ./images/desktop/hero/image1.png    1x,
+          ./images/desktop/hero/image1@2x.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+
+      <source
+        srcset="
+          ./images/tablet/hero/image1.webp    1x,
+          ./images/tablet/hero/image1@2x.webp 2x
+        "
+        media="(min-width:768px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ./images/tablet/hero/image1.png    1x,
+          ./images/tablet/hero/image1@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <source
+        srcset="
+          ./images/mobile/hero/image1.webp    1x,
+          ./images/mobile/hero/image1@2x.webp 2x
+        "
+        media="(max-width:767px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ./images/mobile/hero/image1.png    1x,
+          ./images/mobile/hero/image1@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <img src="./images/desktop/hero/image1.png" alt="Ice Cream" />
+    </picture>
+
+    <picture class="hero__img-right">
+      <source
+        srcset="
+          ./images/desktop/hero/image3.webp    1x,
+          ./images/desktop/hero/image3@2x.webp 2x
+        "
+        media="(min-width:1200px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ./images/desktop/hero/image3.png    1x,
+          ./images/desktop/hero/image3@2x.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+
+      <source
+        srcset="
+          ./images/tablet/hero/image3.webp    1x,
+          ./images/tablet/hero/image3@2x.webp 2x
+        "
+        media="(min-width:768px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="
+          ./images/tablet/hero/image3.png    1x,
+          ./images/tablet/hero/image3@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <img src="./images/desktop/hero/image3.png" alt="Soo Tasty" />
+    </picture>
   </div>
-
-  <ul class="hero__list-right">
-    <li class="hero__item-right">
-      <span class="hero__number">16</span>
-      <p class="hero__text-right">cafes</p>
-    </li>
-    <li class="hero__item-right hero__text-right--place">
-      <span class="hero__number">23</span>
-      <p class="hero__text-right">food trucks</p>
-    </li>
-  </ul>
-  <picture class="hero__img-middle">
-    <source
-      srcset="./images/mobile/hero/image1.png 1x, ./images/mobile/hero/image1@2x.png 2x"
-      media="(max-width:767px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/tablet/hero/image1.png 1x, ./images/tablet/hero/image1@2x.png 2x"
-      media="(min-width:768px) and (max-width:1279.5px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/desktop/hero/image1.png 1x, ./images/desktop/hero/image1@2x.png 2x"
-      media="(min-width:1280px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/mobile/hero/image1.webp 1x, ./images/mobile/hero/image1@2x.webp 2x"
-      media="(max-width:767px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/tablet/hero/image1.webp 1x, ./images/tablet/hero/image1@2x.webp 2x"
-      media="(min-width:768px) and (max-width:1279.5px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/desktop/hero/image1.webp 1x, ./images/desktop/hero/image1@2x.webp 2x"
-      media="(min-width:1280px)"
-      type="image/webp"
-    />
-
-    <img src="./images/desktop/hero/image1.png" alt="Ice Cream" />
-  </picture>
-  <picture class="hero__img-right">
-    <source
-      srcset="./images/tablet/hero/image3.png 1x, ./images/tablet/hero/image3@2x.png 2x"
-      media="(min-width:768px) and (max-width:1279.5px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/desktop/hero/image3.png 1x, ./images/desktop/hero/image3@2x.png 2x"
-      media="(min-width:1280px)"
-      type="image/png"
-    />
-    <source
-      srcset="./images/tablet/hero/image3.webp 1x, ./images/tablet/hero/image3@2x.webp 2x"
-      media="(min-width:768px) and (max-width:1279.5px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/desktop/hero/image3.webp 1x, ./images/desktop/hero/image3@2x.webp 2x"
-      media="(min-width:1280px)"
-      type="image/webp"
-    />
-
-    <img src="./images/desktop/hero/image3.png" alt="Soo Tasty" />
-  </picture>
 </section>
-</div>
