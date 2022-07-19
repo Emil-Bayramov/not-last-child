@@ -87,7 +87,11 @@
   position: relative;
   z-index: 2;
 }
-
+@media screen and (min-width: 480px) {
+  .hero__img-middle {
+    left: 190px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 20px;
