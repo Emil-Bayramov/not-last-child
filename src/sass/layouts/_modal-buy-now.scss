@@ -180,7 +180,7 @@
 
   &:hover,
   &:focus {
-    background-color: $accentColor;
-    color: $mainColor;
+    background-color: $secondaryAccentColor;
+    color: black;
   }
 }
