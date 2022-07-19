@@ -1,6 +1,5 @@
 .advantages {
-  background-color: #fff5f6;
-
+  background-color: #FFF5F6;
   @media screen and (max-width: 767px) {
     padding-top: 40px;
     padding-bottom: 0px;
@@ -30,7 +29,6 @@
   text-transform: uppercase;
   color: $accentColor;
   margin-bottom: 15px;
-
   &::before {
     content: '';
     height: 50px;
@@ -43,7 +41,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .advantages__content::before {
+    .advantages__text::before {
       content: '';
       background-image: url(../images/mobile/advantages/image3@2x.png);
       background-size: contain;
@@ -55,7 +53,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .advantages__content::before {
+    .advantages__text::before {
       content: '';
       background-image: url(../images/mobile/advantages/image4@2x.png);
       background-size: contain;
@@ -67,7 +65,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .advantages__content::before {
+    .advantages__text::before {
       content: '';
       background-image: url(../images/mobile/advantages/image5@2x.png);
       background-size: contain;
