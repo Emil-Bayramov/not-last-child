@@ -1,0 +1,42 @@
+.modal__franchise-title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondaryAccentColor;
+    margin-bottom: 20px;
+}
+
+.modal__franchise-lable {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.58;
+    text-align: center;
+    color: #a33e4c;
+}
+
+.modal-form__activity {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.modal__franchise-lable {
+    color: $accentColor;
+    font-size: 20px;
+    line-height: 1.17;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.modal-form__activity_field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}

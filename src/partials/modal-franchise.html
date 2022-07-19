@@ -1,35 +1,82 @@
-<div class="backdrop is-hidden" data-modal-franchise>
+<div class="backdrop is-hidden modal-franchise" data-modal-franchise>
   <div class="modal modal-bg">
     <button type="button" class="modal-close-btn" data-modal-close-franchise>
-      <svg class="modal-close-btn-icon" width="18px" height="18px">
+      <svg class="modal-btn-close-icon" width="18" height="18">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <p class="about__label"> tradition and love </p>
-    <h2 class="about__title"> how it’s made </h2>
-    <p class="about__text text__modal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-      temporibus porro nemo veniam eveniet unde deserunt optio aperiam natus nisi quae voluptatem
-      accusamus tempore, eos alias. Ipsum tenetur non animi, repellat accusantium impedit provident
-      officia praesentium mollitia fugiat architecto cum necessitatibus consequuntur eveniet! Harum
-      ducimus sint numquam reprehenderit temporibus quam sequi sapiente, necessitatibus asperiores tenetur
-      itaque, possimus hic! Quis qui quae magnam architecto praesentium aliquid adipisci! Asperiores nihil,
-      impedit quisquam possimus qui ex nostrum cupiditate dignissimos officiis autem ad molestiae delectus beatae,
-      sint quos laudantium corporis ea quaerat earum repudiandae ab magni vel. Hic aperiam doloribus, similique
-      ullam quas sunt culpa accusantium consectetur numquam dolor quisquam voluptatem magnam quis a? Consequatur
-      distinctio consequuntur esse, praesentium voluptas iusto aut reiciendis nesciunt omnis provident, expedita
-      aliquam officiis nisi at placeat commodi. Nostrum voluptatibus totam eos voluptas accusantium est, voluptatum
-      nam aut nemo sequi dolores laboriosam eaque cumque perferendis corrupti veniam doloribus explicabo molestias?
-      Minus, ratione eveniet laboriosam, natus fuga officiis quas reiciendis perferendis voluptas autem quidem
-      itaque est recusandae dignissimos sed, possimus sequi ipsam dicta nulla aspernatur? Fugiat soluta fugit
-      similique aliquid atque, sint explicabo eveniet. Expedita dicta exercitationem nobis velit! Beatae dicta
-      tempore praesentium neque libero repudiandae odit, ipsam quia odio? Quae, soluta vel velit earum, animi
-      necessitatibus ad, architecto nihil hic amet facilis. Voluptatem unde debitis nihil ea neque adipisci,
-      ipsa ipsum facere id quidem nobis assumenda illum ipsam hic ratione cupiditate autem vero commodi atque
-      repudiandae fugit? Veritatis pariatur architecto voluptates, consectetur temporibus vel aut magni,
-      maxime ab omnis ex quas tempora repudiandae iusto. Repudiandae, cupiditate! Sed incidunt quis dolor
-      ipsa adipisci inventore nulla, maiores alias debitis quae dolorum odio aperiam atque eos hic reiciendis
-      quaerat ad quas provident illum quidem cupiditate. Ut placeat voluptas, illo suscipit, rerum molestiae
-      cumque iusto alias pariatur eaque soluta quo repellendus nulla odio?</p>
-
+    <form class="modal-form">
+      <h2 class="modal__title">Do you want to work with us?</h2>
+      <h4 class="modal__franchise-title">Do you want to have the best site?</h4>
+      <p class="modal__franchise-lable">Then enter the form and we will contact with you!</p>
+      <label class="modal-form__field">
+        <span class="modal-form__field_key">Your name*</span>
+        <span class="modal-form__wrapper">
+          <input class="modal-form__input" type="text" required name="user-name" pattern="[a-zA-Z]*" title="Jhon Smidt">
+          <svg class="modal-form__icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="modal-form__field">
+        <span class="modal-form__field_key">Phone number*</span>
+        <span class="modal-form__wrapper">
+          <input class="modal-form__input" type="tel" required name="user-phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+          <svg class="modal-form__icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="modal-form__field">
+        <span class="modal-form__field_key">E-mail*</span>
+        <span class="modal-form__wrapper">
+          <input class="modal-form__input" type="email" required name="user-email">
+          <svg class="modal-form__icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </span>
+      </label>
+      <p class="modal__franchise-lable">Type of activity</p>
+      <div class="modal-form__activity">
+        <div class="modal-form__activity_list">
+          <div class="modal-form__activity_field">
+          <input type="checkbox" class="modal-form__activity_input" name="activity" value="Jurisprudence" id="Jurisprudence">
+          <label class="modal-form__label" for="Jurisprudence">Jurisprudence</label>
+        </div>
+        <div class="modal-form__activity_field">
+          <input type="checkbox" class="modal-form__activity_input" name="activity" value="Medicine" id="Medicine">
+          <label class="modal-form__label" for="Medicine">Medicine</label>
+        </div>
+        </div>
+        <div class="modal-form__activity_list">
+          <div class="modal-form__activity_field">
+            <input type="checkbox" class="modal-form__activity_input" name="activity" value="Technology" id="Technology">
+            <label class="modal-form__label" for="Technology">Technology</label>
+          </div>
+          <div class="modal-form__activity_field">
+            <input type="checkbox" class="modal-form__activity_input" name="activity" value="Teaching" id="Teaching">
+            <label class="modal-form__label" for="Teaching">Teaching</label>
+          </div>
+        </div>
+        <div class="modal-form__activity_list">
+          <div class="modal-form__activity_field">
+            <input type="checkbox" class="modal-form__activity_input" name="activity" value="Music" id="Music">
+            <label class="modal-form__label" for="Music">Music</label>
+          </div>
+          <div class="modal-form__activity_field">
+            <input type="checkbox" class="modal-form__activity_input" name="activity" value="Other" id="Other">
+            <label class="modal-form__label" for="Other">Other</label>
+          </div>
+        </div>
+      </div>
+      <p class="modal__franchise-lable">Tell about your company</p>
+      <label class="modal-form__field">
+        <span class="modal-form__field_key">Your comment
+        </span>
+        <textarea class="modal-form__message" placeholder="Write text" name="user-message"></textarea>
+      </label>
+      <button type="submit" class="modal-form__btm">Send</button>
+    </form>
   </div>
 </div>
