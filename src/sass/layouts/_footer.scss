@@ -43,6 +43,7 @@
   justify-content: center;
   border-radius: 50%;
   background-color: $socialsBgColor;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -95,7 +96,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer__container {
+  .footer__top-container {
     display: flex;
     margin-bottom: 40px;
     justify-content: space-between;
@@ -121,7 +122,6 @@
     margin-bottom: 0;
   }
   .footer__social-list {
-    justify-content: center;
     margin-bottom: 49px;
   }
   .footer__social-item:not(:last-child) {
