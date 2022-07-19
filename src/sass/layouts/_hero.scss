@@ -7,9 +7,7 @@
 .hero__title {
   max-width: 218px;
   margin-bottom: 20px;
-  font-family: 'Titan One';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Titan One', sans-serif;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -155,7 +153,7 @@
     margin-bottom: 16px;
   }
   .hero__number {
-    font-family: 'Titan One';
+    font-family: 'Titan One', sans-serif;
     font-size: 28px;
     line-height: 1.14;
     letter-spacing: 0.04em;

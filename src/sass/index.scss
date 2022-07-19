@@ -3,10 +3,14 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-
 @import './base/common';
 @import './base/container';
 @import './base/section';
+
+@import './components/backdrop';
+@import './components/button';
+@import './components/mobile-menu';
+@import './components/modal-window';
 
 @import './layouts/about';
 @import './layouts/advantages';
@@ -21,8 +25,3 @@
 @import './layouts/modal-read-more';
 @import './layouts/products';
 @import './layouts/review';
-
-@import './components/backdrop';
-@import './components/button';
-@import './components/mobile-menu';
-@import './components/modal-window';
