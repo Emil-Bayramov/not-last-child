@@ -1,24 +1,24 @@
 .button {
-    height: 44px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    cursor: pointer;
-    border-radius: 22px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  cursor: pointer;
+  border-radius: 22px;
 }
-  .button_theme-light {
-    color: #D41443;
-    background-color: #FFFFFF;
+.button_theme-light {
+  color: $accentColor;
+  background-color: $mainColor;
 }
-  .button__icon_theme-light {
-    margin-left: 15px;
-    stroke: #D41443;
+.button__icon_theme-light {
+  margin-left: 15px;
+  stroke: $accentColor;
 }
-  .button_theme-dark {
-    color: #FFFFFF;
-    background-color: #D41342;
+.button_theme-dark {
+  color: $mainColor;
+  background-color: $buttonFooterColor;
 }
-  .button__icon_theme-dark {
-    margin-left: 8px;
-    stroke: #FFFFFF;
+.button__icon_theme-dark {
+  margin-left: 8px;
+  stroke: $mainColor;
 }
