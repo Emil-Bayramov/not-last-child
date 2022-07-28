@@ -1,11 +1,9 @@
 <header class="header" id="home">
   <div class="header__container container">
     <nav class="header__navigation">
-      <a href="./index.html" id="header">
-        <svg class="logo__icon" width="199" height="50">
-          <use href="./images/sprite.svg#logo"></use>
-        </svg>
-      </a>
+      <svg class="logo__icon" width="199" height="50">
+        <use href="./images/sprite.svg#logo"></use>
+      </svg>
       <ul class="nav-list">
         <li class="nav-list__item">
           <a class="nav-list__link" href="#home">Home</a>
@@ -37,16 +35,23 @@
         </svg>
       </button>
 
-      <button class="mobile-menu__open-btn" type="button" data-burger>
+      <button
+        class="mobile-menu__open-btn"
+        type="button"
+        aria-label="Open Button"
+        data-burger
+      >
         <svg class="mobile-menu__burger-icon" width="20" height="12">
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
       </button>
     </div>
 
-    <button class="home-button">
-      <a class="home-button__link" href="#header"
-        ><img src="https://img.icons8.com/ios-glyphs/60/ffb8ca/top-menu.png"
+    <button class="home-button" type="button" aria-label="Return to home">
+      <a class="home-button__link" href="#home"
+        ><img
+          src="https://img.icons8.com/ios-glyphs/60/ffb8ca/top-menu.png"
+          alt="top arrow"
       /></a>
     </button>
 
