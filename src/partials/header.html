@@ -1,11 +1,9 @@
 <header class="header" id="home">
   <div class="header__container container">
     <nav class="header__navigation">
-      <a href="./index.html" id="header">
-        <svg class="logo__icon" width="199" height="50">
-          <use href="./images/sprite.svg#logo"></use>
-        </svg>
-      </a>
+      <svg class="logo__icon" width="199" height="50">
+        <use href="./images/sprite.svg#logo"></use>
+      </svg>
       <ul class="nav-list">
         <li class="nav-list__item">
           <a class="nav-list__link" href="#home">Home</a>
@@ -29,28 +27,37 @@
         class="button button_theme-light header__button"
         type="button"
         data-modal-open-buy-now
+        data-header-btn
       >
         Buy now
         <svg class="button__icon_theme-light" width="5" height="8">
           <use href="./images/sprite.svg#icon-arrow"></use>
         </svg>
       </button>
-      <button class="mobile-menu__open-btn" type="button" data-menu-open>
+
+      <button
+        class="mobile-menu__open-btn"
+        type="button"
+        aria-label="Open Button"
+        data-burger
+      >
         <svg class="mobile-menu__burger-icon" width="20" height="12">
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
       </button>
     </div>
 
-    <button class="home-button">
-      <a class="home-button__link" href="#header"
-        ><img src="https://img.icons8.com/ios-glyphs/60/ffb8ca/top-menu.png"
+    <button class="home-button" type="button" aria-label="Return to home">
+      <a class="home-button__link" href="#home"
+        ><img
+          src="https://img.icons8.com/ios-glyphs/60/ffb8ca/top-menu.png"
+          alt="top arrow"
       /></a>
     </button>
 
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu" data-mobile-menu>
       <div class="mobile-menu__container">
-        <button class="mobile-menu__close-btn" type="button" data-menu-close>
+        <button class="mobile-menu__close-btn" type="button" data-btn-close>
           <svg class="mobile-menu__close-icon" width="14" height="14">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
@@ -69,21 +76,27 @@
 
         <ul class="mobile-menu__nav-list">
           <li class="mobile-menu__nav-item">
-            <a class="mobile-menu__nav-link" href="#home">Home</a>
+            <a class="mobile-menu__nav-link" href="#home" data-home>Home</a>
           </li>
           <li class="mobile-menu__nav-item">
-            <a class="mobile-menu__nav-link" href="#about">About us</a>
+            <a class="mobile-menu__nav-link" href="#about" data-products
+              >About us</a
+            >
           </li>
           <li class="mobile-menu__nav-item">
-            <a class="mobile-menu__nav-link" href="#howitsmade"
+            <a class="mobile-menu__nav-link" href="#howitsmade" data-about
               >How it’s made?</a
             >
           </li>
           <li class="mobile-menu__nav-item">
-            <a class="mobile-menu__nav-link" href="#products">Our products</a>
+            <a class="mobile-menu__nav-link" href="#products" data-gallery
+              >Our products</a
+            >
           </li>
           <li class="mobile-menu__nav-item">
-            <a class="mobile-menu__nav-link" href="#contact">Contact</a>
+            <a class="mobile-menu__nav-link" href="#contact" data-contacts
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
